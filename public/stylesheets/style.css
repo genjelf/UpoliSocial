@@ -1,0 +1,34 @@
+@font-face {
+	font-family: "Blender Pro Book";
+	src: url("../fonts/Blender Pro Book.otf");
+}
+
+body {
+	font-family: "Blender Pro Book", sans-serif;
+	font-size: 18px;
+	padding-top: 50px; /* For Fixed NavBar*/
+}
+
+.slider {
+	background-image: url("../images/bg-red.png");
+	height: 400px; 
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-white {
+	background-color: #ffffff;
+}
+
+.bg-gray {
+	background-color: rgba(128, 128, 128, 0.1);
+}
+
+.bg-inverse {
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.bg-transparent {
+	background-color: rgba(41, 43, 44, 0.5) !important;
+}

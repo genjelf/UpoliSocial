@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title><%= title %></title>
+		<!-- Fuente de iconos -->
+		<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="stylesheets/animate.min.css">
+		<!-- Estilos en CSS -->
+		<link rel="stylesheet" href="stylesheets/style.css">
+	</head>
+	<body ng-app="appUPOLI">
+		<!-- Menu -->
+		<div id="con-menu" class="container-fluid bg-inverse fixed-top">
+			<nav id="nav-menu" class="navbar navbar-toggleable-md navbar-inverse bg-inverse container">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#!home">
+					<img src="images/upoli-logo.svg" class="d-inline-block align-top" alt="Logo Principal" width="40" height="30">
+					UPOLI Social
+				</a>
+				<div class="collapse navbar-collapse" id="navbarNav" >
+					<div class= "navbar-nav ml-auto">
+						<a class="nav-item nav-link active" href="#!home">Inicio <span class= "sr-only" > (current) </span></a>
+						<a class="nav-item nav-link" href="#!circle" >Circulos</a>
+						<a class="nav-item nav-link" href="#!signup" >Crear cuenta</a>
+						<a class="nav-item nav-link" href="#!signin" >Iniciar sesión</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- End Menu -->
+		<!-- Views -->
+		<section>
+			<div class="bg-gray" ng-view>
+				<!-- Load Views Here -->
+			</div>
+		</section>
+		<!-- End Views -->
+		<!-- Footer -->
+		<footer class="container-fluid bg-inverse text-white py-3 d-flex justify-content-center align-items-center">
+			<p>Made With &nbsp; <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; In UPOLI</p>
+		</footer>
+		<!-- End Footer -->
+		<!-- jQuery, Popper & Bootstrap Script -->
+		<script src="javascripts/jquery-3.2.1.slim.min.js"></script>
+		<script src="javascripts/tether.min.js"></script>
+		<script src="javascripts/bootstrap.min.js"></script>
+		<script src="javascripts/wow.min.js"></script>
+		<script src="javascripts/angular.min.js"></script>
+		<script src="javascripts/angular-route.min.js"></script>
+		<script src="javascripts/script-app.js"></script>
+		<script src="javascripts/script.js"></script>
+	</body>
+</html>

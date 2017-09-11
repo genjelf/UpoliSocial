@@ -1,0 +1,63 @@
+<div class="pt-4 pb-4 col-md-6 offset-md-3">
+	<div class="card card-outline-secondary bg-white">
+		<div class="card-header">
+			<h3 class="mb-0">Crear cuenta</h3>
+		</div>
+		<div class="card-block">
+			<form class="form" role="form" autocomplete="off" action="" method="POST">
+				<!-- Sede -->
+				<div class="form-group">
+					<label for="headquarters">Sede</label>
+					<select class="custom-select col-md-4" id="headquarters" ng-model="perfil.sede">
+						<option value="1">Managua</option>
+						<option value="2">Rivas</option>
+						<option value="3">Boaco</option>
+						<option value="4">Estelí</option>
+					</select>
+				</div>
+				<!-- Escuela -->
+				<div class="form-group">
+					<label for="school">Escuela</label>
+					<select class="custom-select col-md-4" id="school" ng-model="perfil.escuela" onchange="seleccionarCarrera()">
+						<option value="1">Diseño</option>
+						<option value="2">Enfermería</option>
+						<option value="3">Ingeniería</option>
+						<option value="4">Ciencias Económicas y Empresariales</option>
+						<option value="5">Ciencias Jurídicas y Políticas</option>
+					</select>
+				</div>
+				<!-- Carrera -->
+				<div class="form-group">
+					<label for="school">Carrera</label>
+					<select class="custom-select col-md-4" id="area" ng-model="perfil.carrera">
+					<!-- Load With JavaScript -->
+					</select>
+				</div>
+				<!-- Nombre -->
+				<div class="form-group">
+					<label for="name">Nombre</label>
+					<input type="text" class="form-control" id="name" placeholder="Nombre" required="" ng-model="perfil.nombre">
+				</div>
+				<!-- Edad -->
+				<div class="form-group">
+					<label for="age">Edad</label>
+					<input type="number" class="form-control" id="age" placeholder="Edad" required="" ng-model="perfil.edad">
+				</div>
+				<!-- Año de ingreso -->
+				<div class="form-group">
+					<label for="year-ing">Año de ingreso</label>
+					<input type="number" class="form-control" id="year-ing" placeholder="Año de ingreso" required="" ng-model="perfil.anioIngreso">
+				</div>
+				<!-- Año de egreso -->
+				<div class="form-group">
+					<label for="year-egr">Año de egreso</label>
+					<input type="number" class="form-control" id="year-egr" placeholder="Año de egreso" required="" ng-model="perfil.anioEgreso">
+				</div>
+				<!-- Registrarse -->
+				<div class="form-group">
+					<button type="submit" class="btn btn-success btn-lg float-right" ng-click="agregarPerfil()">Registrarse</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
